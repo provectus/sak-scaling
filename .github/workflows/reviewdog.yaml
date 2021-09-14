@@ -42,4 +42,4 @@ jobs:
           fail_on_error: true # Optional. Fail action if errors are found
           filter_mode: "added" # Optional. Check all files, not just the diff
           level: info
-          flags: "--module --loglevel=error" # Optional. Add custom tflint flags
+          flags: "--module -c .tflint.hcl" # Optional. Add custom tflint flags
