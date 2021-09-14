@@ -3,6 +3,7 @@ config {
   force = false
   deep_check = false
   disabled_by_default = false
+  variables = ["cluster_name=github-actions-cluster"]
 }
 
 plugin "aws" {
