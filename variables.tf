@@ -19,7 +19,6 @@ variable "hpa_conf" {
 
 variable "namespace" {
   type        = string
-  default     = "kube-system"
   description = "A name of the existing namespace"
 }
 
