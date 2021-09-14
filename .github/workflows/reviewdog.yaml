@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Test creds
-      run: echo $AWS_ACCESS_KEY_ID
+        run: echo $AWS_ACCESS_KEY_ID
 
       - name: Clone repo
         uses: actions/checkout@master
