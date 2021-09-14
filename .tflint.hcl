@@ -7,7 +7,6 @@ config {
 
 plugin "aws" {
   enabled = true
-  deep_check = true
 }
 
 rule "aws_instance_invalid_type" {
