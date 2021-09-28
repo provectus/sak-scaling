@@ -1,6 +1,6 @@
 # Scaling
 
-The module installs two kind of autoscaler applications: 
+The module installs two kind of autoscaler applications:
 - [Cluster Autoscaler](https://github.com/kubernetes/autoscaler) - managing the number of EKS nodes.
 - [Horizontal Pod Autoscaler](https://github.com/banzaicloud/hpa-operator) - managing number of deployment replicas.
 
@@ -15,13 +15,18 @@ module scaling {
 }
 ```
 
+## Requirements
+
+``` terraform >= 0.15
+```
+
 ## Providers
 | Name | Version |
 |------|---------|
-| aws | >= 2.0, < 4.0 |
-| helm | >= 0.10, < 2.0 |
+| aws | >= 3.0, < 4.0 |
+| helm | >= 1.0, < 2.0 |
 | kubernetes | >= 1.11 |
-| local | n/a |
+| local | >= 2.1.0 |
 
 ## Inputs
 | Name | Description | Type | Default | Required |
