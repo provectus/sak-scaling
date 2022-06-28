@@ -38,7 +38,7 @@ variable "cluster_name" {
 variable "cluster_version" {
   type        = string
   description = "EKS cluster version"
-  default     = "1.19"
+  default     = "1.21"
 }
 
 variable "hpa_enabled" {
@@ -55,7 +55,7 @@ variable "cluster_autoscaler_enabled" {
 
 variable "cluster_autoscaler_chart_version" {
   type        = string
-  default     = "9.10.3"
+  default     = "9.19.2"
   description = "Version of Cluster Autoscaler chart"
 }
 
