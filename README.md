@@ -9,7 +9,7 @@ The module installs two kind of autoscaler applications:
 ``` hcl
 module scaling {
   source          = "github.com/provectus/swiss-army-kube.git/modules/scaling"
-  cluster_name    = "testing"
+  cluster_name    = module.eks.cluster_id
   cluster_version = "1.19"
   namespace       = "kube-system"
 }
