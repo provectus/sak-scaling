@@ -10,14 +10,15 @@ The module installs two kind of autoscaler applications:
 module scaling {
   source          = "github.com/provectus/swiss-army-kube.git/modules/scaling"
   cluster_name    = module.eks.cluster_id
-  cluster_version = "1.19"
+  argocd          = module.argocd.state
+  cluster_version = "1.22"
   namespace       = "kube-system"
 }
 ```
 
 ## Requirements
 
-``` terraform >= 0.15
+``` terraform >= 1.1
 ```
 
 ## Providers
