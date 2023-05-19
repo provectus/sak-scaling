@@ -125,6 +125,9 @@ locals {
           "prune"    = true
           "selfHeal" = true
         }
+        "syncOptions" = {
+          "createNamespace" = true
+        }
       }
     }
   }
