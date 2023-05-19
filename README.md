@@ -1,5 +1,10 @@
 # Scaling
 
+This module is part of Swiss Army Kube project. Check out main repo and contributing guide below.
+**[Swiss Army Kube](https://github.com/provectus/swiss-army-kube)**
+|
+**[Contributing Guide](https://github.com/provectus/swiss-army-kube/blob/master/CONTRIBUTING.md)**
+
 The module installs two kind of autoscaler applications:
 - [Cluster Autoscaler](https://github.com/kubernetes/autoscaler) - managing the number of EKS nodes.
 - [Horizontal Pod Autoscaler](https://github.com/banzaicloud/hpa-operator) - managing number of deployment replicas.
