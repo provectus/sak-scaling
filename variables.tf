@@ -23,12 +23,6 @@ variable "namespace" {
   description = "A name of the existing namespace"
 }
 
-variable "namespace_name" {
-  type        = string
-  default     = "scaling"
-  description = "A name of namespace for creating"
-}
-
 variable "cluster_name" {
   type        = string
   default     = null
