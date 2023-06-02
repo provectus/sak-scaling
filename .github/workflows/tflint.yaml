@@ -1,4 +1,4 @@
-name: reviewdog
+name: tflint
 on:
   pull_request:
     paths:
