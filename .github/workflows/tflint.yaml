@@ -1,4 +1,4 @@
-name: reviewdog
+name: tflint
 on:
   pull_request:
     paths:
@@ -22,6 +22,8 @@ jobs:
       with:
         tflint_version: v0.46.1
         github_token: ${{ secrets.github_token }}
+    - name: Install TFLint AWS plugin
+      run: tflint --plugin-dir=/home/runner/.tflint.d/plugins plugin install tflint-aws
 
     - uses: hashicorp/setup-terraform@v1
       name: Setup Terraform
