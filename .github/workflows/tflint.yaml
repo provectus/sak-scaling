@@ -1,4 +1,4 @@
-name: reviewdog
+name: tflint
 on:
   pull_request:
     paths:
@@ -6,9 +6,6 @@ on:
     - '**.tfvars'
     - '**.tfvars.json'
     - '**.hcl'
-
-env:
-  TERRAFORM_VERSION: "1.0.6"
 
 jobs:
 
@@ -23,13 +20,13 @@ jobs:
     - uses: terraform-linters/setup-tflint@v2
       name: Setup TFLint
       with:
-        tflint_version: v0.41.0
+        tflint_version: v0.46.1
         github_token: ${{ secrets.github_token }}
 
     - uses: hashicorp/setup-terraform@v1
       name: Setup Terraform
       with:
-        terraform_version: 1.3.8
+        terraform_version: 1.4.6
 
     - name: Initialize Terraform
       run: terraform init
